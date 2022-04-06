@@ -10,3 +10,71 @@
 html, body {
 	height: 100%;
 }
+
+/*general structure*/
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #bdc3c7;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/*general structure*/
+
+/*title and description*/
+.container .box-elements {
+  width: 100%;
+  height: 90px;
+}
+.container .elements-title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 2px;
+  color: #34495e;
+}
+
+.container .elements-text {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #2c3e50;
+}
+
+/*title and description*/
+
+/*Text hover effect*/
+.link {
+  background-image: linear-gradient(#ff2f97, #ff2f97);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 500ms;
+  width: 8%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.link:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+/*Text hover effect*/
+
