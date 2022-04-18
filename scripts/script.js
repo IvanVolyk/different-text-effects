@@ -1,4 +1,5 @@
-﻿var words = document.getElementsByClassName('word');
+﻿/*Rotating Text*/
+var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
@@ -110,3 +111,13 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+/*Rotating Text*/
+
+/*3D Isometric Text Effects | CSS, JS*/
+var text = document.getElementById('text');
+var shadow = '';
+for(var i = 0; i < 30; i++) {
+  shadow +=(shadow? ',':'')+ -i*1+'px '+ i*1+'px 0 #d9d9c9';
+}
+text.style.textShadow = shadow;
+/*3D Isometric Text Effects | CSS, JS*/
