@@ -200,3 +200,49 @@ section {
 }
 /*3D Isometric Text Effects | CSS, JS*/
 
+/*Glowing Text Hover Effects*/
+.glowing__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 410px;
+  background: #000;
+}
+
+.glowing-txt {
+  font-size: 6em;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.glowing-txt .glowing-txt_inner {
+  transition: 0.5s;
+}
+
+.glowing-txt:hover .glowing-txt_inner:nth-child(1) {
+  margin-right: 10px;
+}
+
+.glowing-txt:hover .glowing-txt_inner:nth-child(1):after {
+  content: "'";
+
+}
+
+.glowing-txt:hover .glowing-txt_inner:nth-child(2) {
+  margin-left: 40px;
+}
+
+.glowing-txt:hover .glowing-txt_inner {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 40px #fff,
+               0 0 80px #fff,
+               0 0 120px #fff,
+               0 0 160px #fff;
+}
+/*Glowing Text Hover Effects*/
+
+
