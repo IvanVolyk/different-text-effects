@@ -245,4 +245,89 @@ section {
 }
 /*Glowing Text Hover Effects*/
 
+/*Creative Country Text Animation Hover Effects*/
+
+.country__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.country__items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.country__item {
+  text-align: center;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.country__items:hover .country__item  {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.country__items .country__item:hover {
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.075);
+  letter-spacing: 3px;
+}
+
+.country__items .country__item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #f00;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 18vw;
+   -webkit-text-stroke: 0px #000;
+   letter-spacing: 100px;
+}
+
+.country__items .country__item:hover::before {
+  content: attr(data-text);
+  opacity: 1;
+  letter-spacing: 10px;
+}
+
+.country__items .country__item:nth-child(1)::before {
+  background: linear-gradient(#005bbc 0%, #005bbc 50%, #ffd600 50%, #ffd600 100% );
+} 
+
+.country__items .country__item:nth-child(2)::before {
+  background: linear-gradient(#fff 0%, #fff 50%, #f00 50%, #f00 100% );
+} 
+
+.country__items .country__item:nth-child(3)::before {
+  background: url(../img/usa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+
+/*Creative Country Text Animation Hover Effects*/
+
 
