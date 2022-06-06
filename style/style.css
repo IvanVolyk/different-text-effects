@@ -330,4 +330,46 @@ section {
 
 /*Creative Country Text Animation Hover Effects*/
 
+/*CSS Animation Play Wave State Property*/
+
+.wave__inner {
+  font-family: consolas;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.wave__loader {
+  position: relative;
+}
+
+.wave__loader .wave__item {
+  position: relative;
+  font-size: 2em;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  animation-play-state: paused;
+  cursor: default;
+}
+
+.wave__loader:hover .wave__item {
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-50px);
+  }
+}
+
+/*CSS Animation Play Wave State Property*/
+
 
