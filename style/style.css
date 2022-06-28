@@ -446,4 +446,65 @@ section {
 
 /*Ghost Text Hover Effects*/
 
+/*Wrap Text Around Circle*/
+
+.circle {
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  padding: 50px;
+}
+
+.circle__items {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle__items.circle__item1 {
+  width: 400px;
+  height: 400px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
+
+.circle__items.circle__item2 {
+  width: 300px;
+  height: 300px;
+  float: right;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
+
+.circle__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle__title {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  line-height: 160%;
+}
+
+.circle__text {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/*Wrap Text Around Circle*/
+
 
