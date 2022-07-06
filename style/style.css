@@ -237,11 +237,11 @@ section {
 .glowing-txt:hover .glowing-txt_inner {
   color: #fff;
   text-shadow: 0 0 10px #fff,
-               0 0 20px #fff,
-               0 0 40px #fff,
-               0 0 80px #fff,
-               0 0 120px #fff,
-               0 0 160px #fff;
+  0 0 20px #fff,
+  0 0 40px #fff,
+  0 0 80px #fff,
+  0 0 120px #fff,
+  0 0 160px #fff;
 }
 /*Glowing Text Hover Effects*/
 
@@ -303,8 +303,8 @@ section {
   transition: 0.5s;
   color: rgba(0, 0, 0, 0.05);
   font-size: 18vw;
-   -webkit-text-stroke: 0px #000;
-   letter-spacing: 100px;
+  -webkit-text-stroke: 0px #000;
+  letter-spacing: 100px;
 }
 
 .country__items .country__item:hover::before {
@@ -588,5 +588,52 @@ section {
 }
 
 /*Input Field Text Animation*/
+
+/*Video inside Text*/
+
+.video__inner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video__banner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 30vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 100vh;
+  mix-blend-mode: screen;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  cursor: default;
+}
+
+/*Video inside Text*/
 
 
