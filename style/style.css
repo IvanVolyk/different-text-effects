@@ -679,4 +679,54 @@ section {
 
 /*Wooden Text Typography*/
 
+/*Simple underline on hover*/
+
+.underline__wrapper {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.underline__list {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline__items {
+  padding-right: 100px;
+}
+
+.underline__item {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 35px;
+  color: #e84393;
+}
+
+.underline__item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #e84393;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.underline__item:hover::before {
+  width: 100%;
+}
+
+/*Simple underline on hover*/
+
 
