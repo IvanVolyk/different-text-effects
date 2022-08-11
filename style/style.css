@@ -729,4 +729,57 @@ section {
 
 /*Simple underline on hover*/
 
+/*Link Hover Animation SVG*/
+
+.stroke__wrapper {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8ff;
+  font-family: 'Poppins', sans-serif;
+  --text: #2b3044;
+  --line: #bbc1e1;
+  --line-active: #275efe;
+}
+
+.stroke__text {
+  font-size: 18px;
+  margin: 0;
+  color: var(--text);
+}
+
+.stroke__link {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+  transition: margin 0.25s;
+  margin: 0 var(--spacing, 0px);
+}
+
+.stroke__link svg {
+  width: 76px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+.stroke__link:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 180px;
+}
+
+/*Link Hover Animation SVG*/
+
 
