@@ -929,13 +929,13 @@ section {
     color: #fff;
     filter: blur(2px);
     text-shadow: 0 0 10px #00b3ff,
-                0 0 20px #00b3ff,
-                0 0 40px #00b3ff,
-                0 0 80px #00b3ff,
-                0 0 120px #00b3ff,
-                0 0 200px #00b3ff,
-                0 0 300px #00b3ff,
-                0 0 400px #00b3ff;
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff,
+    0 0 200px #00b3ff,
+    0 0 300px #00b3ff,
+    0 0 400px #00b3ff;
   }
   5%, 95% {
     color: #111;
@@ -991,5 +991,61 @@ section {
 }
 
 /*Auto CSS Animation Infinite*/
+
+/*Doctor Skew text on hover*/
+
+.doctor__inner {
+  background-color: #15817a;
+} 
+
+.doctor__box {
+  margin: 250px 300px;
+  text-align: center;
+  display: inline-block;
+  transition: .5s;
+}
+
+.doctor__text {
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  display: block;
+  line-height: 120px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #a0a0a0;
+  font-size: 40px;
+  float: left;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.doctor__box .doctor__text:nth-child(1) {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.doctor__box .doctor__text:nth-child(6) {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.doctor__box:hover .doctor__text:nth-child(odd) {
+  transform: skewY(-15deg);
+  color: #b5b5b5;
+  box-shadow: 0 60px 20px rgba(0, 0, 0, .1);
+}
+
+.doctor__box:hover .doctor__text:nth-child(even) {
+  transform: skewY(15deg);
+  color: #b5b5b5;
+  box-shadow: 0 60px 20px rgba(0, 0, 0, .1), inset 0px 0 30px rgba(0, 0, 0, .2);
+}
+
+.doctor__box:hover {
+  transform: rotateX(35deg);
+}
+
+/*Doctor Skew text on hover*/
 
 
