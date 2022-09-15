@@ -1048,4 +1048,29 @@ section {
 
 /*Doctor Skew text on hover*/
 
+/*Burger Text Shadow Style*/
+
+.burger__inner {
+  background-color: #eb356f;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  letter-spacing: 18px;
+  text-shadow: 7px 7px #ff9a0c, 
+  18px 18px #000;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+}
+
+/*Burger Text Shadow Style*/
+
 
