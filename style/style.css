@@ -1214,7 +1214,53 @@ section {
   --angle: 240deg;
 }
 
-
 /*The Lord of the Rings 3d text*/
+
+/*Rotating Jordan Hover Animation*/
+
+.jordan__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 05%);
+}
+
+.jordan__word {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+.jordan__char {
+  color: transparent;
+  -webkit-text-stroke: 1px hsl(189, 90%, 60%);
+  font-size: 150px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  perspective: 200px;
+  line-height: 0.71;
+}
+
+.jordan__char:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: hsl(189, 90%, 60%);
+  transition: all 1s ease calc(0.1s * var(--i));
+  transform-origin: left top;
+}
+
+.jordan__word:hover .jordan__char:before {
+  transform: rotateX(250deg);
+  opacity: 0;
+}
+
+/*Rotating Jordan Hover Animation*/
 
 
