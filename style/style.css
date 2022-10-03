@@ -1263,4 +1263,43 @@ section {
 
 /*Rotating Jordan Hover Animation*/
 
+/*Bram Stoker Vampires Text Images*/
+
+.stoker__inner {
+  background-color: #000;
+}
+
+.header__stoker {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.stoker__title {
+  text-transform: uppercase;
+  color: #dbdbdb;
+  font-family: 'Poppins', sans-serif;
+  font-size: 92px;
+  font-weight: 700;
+  cursor: default;
+  transition: all 1s;
+}
+
+.stoker__img {
+  opacity: 0;
+  transition: all 1s;
+  transform: scale(1);
+}
+
+.header__stoker:hover .stoker__title {
+  letter-spacing: 2px;
+}
+
+.header__stoker:hover .stoker__img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/*Bram Stoker Vampires Text Images*/
+
 
