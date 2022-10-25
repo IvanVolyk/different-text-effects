@@ -2034,4 +2034,64 @@ section {
 
 /*Merry Halloween Animation CSS Only*/
 
+/*Accordion Hover Animation CSS Effect*/
+
+.accordion__inner {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(90deg, #f8d2c7,#ed9277,#995e4d);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.accordion__inner-block {
+  display: inline-block;
+  text-align: left;
+  margin: 1%;
+  width: 40%;
+}
+
+.accordion__inner-block:hover .accordion__content {
+  max-height: 495px;
+}
+
+.accordion__content {
+  transition: max-height 1s;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion__toggle {
+  transition: background .1s linear;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #333;
+  display: block;
+  font-size: 30px;
+  margin: 16% 0 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.accordion__toggle:hover {
+  background: #995e4d;
+  color: #fff;
+}
+
+.accordion__box {
+  padding: 0 15px;
+}
+
+/*Accordion Hover Animation CSS Effect*/
+
 
