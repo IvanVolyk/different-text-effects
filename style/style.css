@@ -2094,4 +2094,41 @@ section {
 
 /*Accordion Hover Animation CSS Effect*/
 
+/*Star Wars Text Repeat Animation CSS*/
+
+.starwars__inner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/star-wars-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starwars__title {
+  font-size: 160px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: default;
+  -webkit-text-stroke: 1px #fbe60b;
+  color: transparent;
+  background-image: linear-gradient(#fbe60b, #fbe60b);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -750px 0;
+  animation: backcolor 9s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*Star Wars Text Repeat Animation CSS*/
+
 
