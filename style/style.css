@@ -357,7 +357,7 @@ section {
   color: #fff;
   display: inline-block;
   text-transform: uppercase;
-  animation: animate 2s ease-in-out infinite;
+  animation: waveanimate 2s ease-in-out infinite;
   animation-delay: calc(0.1s * var(--i));
   animation-play-state: paused;
   cursor: default;
@@ -367,7 +367,7 @@ section {
   animation-play-state: running;
 }
 
-@keyframes animate {
+@keyframes waveanimate {
   0%, 40%, 100% {
     transform: translateY(0);
   }
