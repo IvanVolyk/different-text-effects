@@ -2177,4 +2177,57 @@ section {
 
 /*Haven Text to Picture Animation CSS*/
 
+/*Kingdom Circle Rides on Text CSS JS*/
+
+.kingdom__inner {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.kingdom__btn {
+  cursor: pointer;
+  background: linear-gradient(90.73deg, #c9729a 4%, #923adb 97.46%);
+  position: absolute;
+  top: 50px;
+  padding: 5px;
+  width: 100px;
+  height: 52px;
+  border: solid 3px #000;
+  border-radius: 40px;
+  display: flex;
+  transition: .5s;
+}
+
+.kingdom__btn i {
+  font-size: 34px;
+  transition: .5s;
+}
+
+.kingdom__toggle {
+  background-color: #000;
+  position: absolute;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.kingdom__content {}
+
+.kingdom__circle {}
+
+.kingdom__title {}
+
+.kingdom__line {}
+
+
+/*Kingdom Circle Rides on Text CSS JS*/
+
 
