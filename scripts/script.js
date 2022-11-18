@@ -121,3 +121,11 @@ for(var i = 0; i < 30; i++) {
 }
 text.style.textShadow = shadow;
 /*3D Isometric Text Effects | CSS, JS*/
+
+/*Kingdom Circle Rides on Text CSS JS*/
+
+document.querySelector('.kingdom__inner .kingdom__btn').onclick = () => {
+  document.querySelector('.kingdom__inner').classList.toggle('kingdom__moon');
+}
+
+/*Kingdom Circle Rides on Text CSS JS*/
