@@ -2337,4 +2337,61 @@ section {
 
 /*Watson Hover Text CSS JS*/
 
+/*Crash Glitched Text Animation CSS*/
+
+.crash__inner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: -webkit-linear-gradient(180deg, #23379a,#09133c);
+  background: linear-gradient(180deg, #23379a,#09133c);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.crash__text {
+  animation: crashanimate 1s linear infinite;
+}
+
+@keyframes crashanimate {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.crash__text:before {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  animation: crashtopanimate 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes crashtopanimate {
+  2%, 64% {
+    transform: translate(2px, -2px);
+  }
+  4%, 60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+/*Crash Glitched Text Animation CSS*/
+
 
