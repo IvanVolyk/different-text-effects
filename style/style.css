@@ -2394,4 +2394,108 @@ section {
 
 /*Crash Glitched Text Animation CSS*/
 
+/*Christmas Animation Snowflakes Effect HTML CSS*/
+
+.christmas__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #1678f3,#0099ba,#1678f3);
+}
+
+.christmas__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.christmas__wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: url(../img/christmas-tree.png);
+  z-index: 1;
+}
+
+.christmas__circle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.christmas__circle::before {
+  content: '';
+  position: absolute;
+  inset: -200px -300px;
+  background: url(../img/christmas-santa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  animation: santaAnimate 5s ease-in-out infinite;
+}
+
+@keyframes santaAnimate {
+  0%,100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+.christmas__circle::after {
+  content: 'Happy New Year';
+  position: absolute;
+  inset: -125px -200px;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+
+.christmas__snows {
+  position: relative;
+  display: flex;
+}
+
+.christmas__snows-item {
+  position: relative;
+  min-width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 1vw;
+  box-shadow: -100px 20px 5px #fff,
+  100px 20px 10px #fff;
+  animation: snowAnimate 15s linear infinite;
+  animation-duration: calc(75s / var(--i));
+}
+
+.christmas__snows-item:nth-child(even) {
+  min-width: 10px;
+  height: 10px;
+}
+
+@keyframes snowAnimate {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/*Christmas Animation Snowflakes Effect HTML CSS*/
+
 
